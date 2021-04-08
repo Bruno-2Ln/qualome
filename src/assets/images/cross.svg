@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Groupe_67" transform="matrix(1,0,0,1,-1360.09,-743.086)">
+        <g transform="matrix(1,0,0,1,1361.5,744.5)">
+            <path d="M-0.354,0.354L8.833,9.541C9.029,9.736 9.345,9.736 9.541,9.541C9.736,9.345 9.736,9.029 9.541,8.833L0.354,-0.354C0.158,-0.549 -0.158,-0.549 -0.354,-0.354C-0.549,-0.158 -0.549,0.158 -0.354,0.354Z" />
+        </g>
+        <g transform="matrix(1,0,0,1,1361.5,744.5)">
+            <path d="M8.833,-0.354L-0.354,8.833C-0.549,9.029 -0.549,9.345 -0.354,9.541C-0.158,9.736 0.158,9.736 0.354,9.541L9.541,0.354C9.736,0.158 9.736,-0.158 9.541,-0.354C9.345,-0.549 9.029,-0.549 8.833,-0.354Z" />
+        </g>
+    </g>
+    <style type="text/css">
+        path {fill:#FC5D41;}
+    
+    </style>
+</svg>

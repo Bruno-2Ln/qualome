@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Groupe_154" transform="matrix(1,0,0,1,-1005.56,-257.045)">
+        <g transform="matrix(1,0,0,1,1024.96,258.045)">
+            <path d="M-0,1L11.225,1C11.777,1 12.225,0.552 12.225,-0C12.225,-0.552 11.777,-1 11.225,-1L0,-1C-0.552,-1 -1,-0.552 -1,-0C-1,0.552 -0.552,1 -0,1Z"/>
+        </g>
+        <g transform="matrix(1,0,0,1,1024.96,264.535)">
+            <path d="M0,1L11.225,1C11.777,1 12.225,0.552 12.225,0C12.225,-0.552 11.777,-1 11.225,-1L-0,-1C-0.552,-1 -1,-0.552 -1,0C-1,0.552 -0.552,1 0,1Z"/>
+        </g>
+        <g transform="matrix(1,0,0,1,1024.96,271.025)">
+            <path d="M0,1L9.362,1C9.914,1 10.362,0.552 10.362,0C10.362,-0.552 9.914,-1 9.362,-1L-0,-1C-0.552,-1 -1,-0.552 -1,0C-1,0.552 -0.552,1 0,1Z"/>
+        </g>
+        <g id="Tracé_283" transform="matrix(1,0,0,1,-2.582,-17.274)">
+            <path d="M1023.79,282.155L1015.97,274.631L1008.14,282.155L1010.5,282.155L1010.5,289.3L1014.54,289.3L1014.54,283.833L1017.39,283.833L1017.39,289.3L1021.44,289.3L1021.44,282.156L1023.79,282.155Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

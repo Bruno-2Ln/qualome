@@ -6,17 +6,34 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AnnoncesViewComponent } from './views/annonces-view/annonces-view.component';
 import { ErrorViewComponent } from './views/error-view/error-view.component';
+import { AnnonceComponent } from './components/annonce/annonce.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './components/search/search.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { AuthViewComponent } from './views/auth-view/auth-view.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnnoncesViewComponent,
-    ErrorViewComponent
+    ErrorViewComponent,
+    AnnonceComponent,
+    SearchComponent,
+    HeaderComponent,
+    MenuComponent,
+    AuthViewComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

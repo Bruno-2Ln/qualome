@@ -1,0 +1,41 @@
+
+<div class="test" *ngFor="let annonce of annonces">
+<div class="card col-md-10 p-4 mx-auto annonce-container d-flex">
+    <div class="row g-0">
+        <div class="col-md-4 div-img">
+            <img src="https://via.placeholder.com/100" class="card-img-top img-fluid mh-100 h-75" alt="">
+            <!--<img *ngIf="index == 0" class="card-img-top img-fluid mh-100" [src]="photo" alt="Card image cap">
+            <img class="img-responsive" src="" alt="..."> -->
+        </div>
+        <div class="col-md-8 d-flex">
+            <div class="card-body col-md-8 pt-0">
+                <p class="card-text">
+                    <img class="pin" src="../../../assets/images/pin.svg" alt="icone marqueur de ville">
+                    {{annonce.address_full}}
+                </p>
+                <h6 class="card-title mb-4">{{annonce.title}}</h6>
+                <input type="text" class="form-control" placeholder="Ajouter un commentaire">
+                <div class="d-flex mt-3">
+                    <p class="card-text mr-4">{{annonce.area_full}} m²</p>
+                    <p *ngIf="annonce.rooms && annonce.rooms > 1" class="card-text">{{annonce.rooms}} pièces</p>
+                    <p *ngIf="annonce.rooms  == 1" class="card-text">{{annonce.rooms}} pièce</p>
+                </div>
+                <p class="card-text mt-3">
+                    <small class="text-muted">
+                        il y a 12 minutes, 
+                        <a [href]="annonce.url"> via {{annonce.domain}}</a>
+                    </small>
+                </p>
+            </div>
+            <div class="card-body col-md-8 pt-0">
+                <div class="h-100">
+                    <h4 class="card-text text-right">{{annonce.price}} €</h4>
+                    <p class="card-text text-right">16 €/m²</p>
+                    <p class="card-text text-right">coeur</p>
+                    <p class="card-text text-right cross-annonce"><small><img class="cross" src="../../../assets/images/cross.svg" alt=""> Masquer cette annonce</small> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

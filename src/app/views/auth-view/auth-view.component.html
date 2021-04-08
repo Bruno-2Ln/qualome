@@ -1,0 +1,40 @@
+<div class="container text-center">
+    <app-logo></app-logo>
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card my-5">
+                <div class="card-body">
+
+                    <h5 class="card-title">Connexion</h5>
+                    <form [formGroup]="authForm" (ngSubmit)="onSubmitSignIn()">
+
+                    <div *ngIf="errorMsg" class="alert alert-danger">{{errorMsg}}</div>
+
+                        <div>
+                            <label for="username">
+                                Pseudo
+                            </label>
+                            <input class="form-control" id="username" formControlName="username" autofocus>
+                        </div>
+                        <br>
+
+                        <div>
+                            <label for="mdp">
+                                Mot de passe
+                            </label>
+                            <input type="password" class="form-control" id="mdp" formControlName="mdp" autofocus>
+                        </div>
+
+                        <br>
+
+                        <button id="btn-connect" class="btn btn-lg btn-dark btn-block text-uppercase" [disabled]="authForm.invalid">
+                            Me connecter
+                        </button>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

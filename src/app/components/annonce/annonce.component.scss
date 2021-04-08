@@ -1,0 +1,41 @@
+.annonce-container {
+    width: 58rem;
+    height: 16rem;
+    border: none!important;
+    background-color: transparent;
+}
+
+.test{
+    width: 100%;
+}
+
+.test:nth-child(odd){
+    background-color: #FAFAFA;
+}
+
+.pin{
+    width: 13.66px;
+    height: 15.83px;
+    margin-right: 4.69px;
+}
+
+.cross{
+    width: 12.19px;
+    height: 12.19px;
+}
+
+.cross-annonce{
+    position: relative;
+    top: 63px;
+}
+
+h6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 256px;
+}
+
+input{
+    font-size: 10px;
+}
