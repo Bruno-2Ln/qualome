@@ -12,6 +12,12 @@ export class AuthService {
     private userService: UserService,
   ) { }
 
+  /**
+   * Fonction permettant l'authentification
+   * @param username 
+   * @param password 
+   * @returns 
+   */
   signIn(username: string, password: string) {
     return new Promise((resolve, reject) => {
       //juste pour simuler un temps d'attente pour la récupération
@@ -35,6 +41,10 @@ export class AuthService {
     })
   }
 
+
+  /**
+   * Fonction permettant la déconnexion
+   */
   signOut() {
     this.isAuth = false;
   }

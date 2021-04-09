@@ -28,6 +28,10 @@ export class AuthViewComponent implements OnInit {
     })
   }
 
+  /**
+   * Fonction permettant de gérer le comportement en cas de réussite
+   * ou d'échec de l'authentification.
+   */
   onSubmitSignIn(): void {
     let username = this.authForm.value.username;
     let mdp = this.authForm.value.mdp;

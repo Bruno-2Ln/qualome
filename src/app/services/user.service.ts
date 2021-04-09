@@ -17,6 +17,13 @@ export class UserService {
     );
   }
 
+
+  /**
+   * Fonction permettant de récupérer un User par son pseudo et
+   * de le retourner
+   * @param pseudo 
+   * @returns 
+   */
   getUserByPseudo(pseudo){
 
     for(let user of this.users){

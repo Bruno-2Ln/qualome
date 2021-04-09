@@ -17,6 +17,10 @@ export class AnnonceService {
     private http: HttpClient,
   ) {}
 
+  /**
+   * Fonction permettant de retourner les données.
+   * @returns 
+   */
   getAnnonces(): Observable<Annonce[]> {
     return this.http.get<Annonce[]>(this.url)
   }

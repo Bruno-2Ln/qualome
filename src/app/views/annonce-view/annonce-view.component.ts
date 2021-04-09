@@ -35,6 +35,12 @@ export class AnnonceViewComponent implements OnInit {
             )
           }
 
+  /**
+   * Fonction permettant de récupérer et retourner une annonce.
+   * @param data 
+   * @param id 
+   * @returns 
+   */
   getAnnonce(data, id) {
     for (let i = 0; i <= data.length; i++){
       if (data[i].id == id){

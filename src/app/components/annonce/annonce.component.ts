@@ -30,7 +30,13 @@ export class AnnonceComponent implements OnInit, OnDestroy {
         ));
   }
 
-  getFirstPicture(data) {
+  /**
+   * Fonction permettant de récupérer un tableau regroupant
+   * la première photo de chaque données du tableau en paramètre.
+   * @param data 
+   * @returns 
+   */
+  getFirstPicture(data: Array<any>) {
     let array = []
     for (let i = 0; i < data.length; i++){
       if(data[i].pictures != null && data[i].pictures.length > 0){
