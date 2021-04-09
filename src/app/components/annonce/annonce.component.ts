@@ -13,6 +13,7 @@ export class AnnonceComponent implements OnInit, OnDestroy {
 
   annonces: Array<Annonce>;
   subscription: Subscription;
+  pictures: Array<string>;
 
   constructor(
     private annonceService: AnnonceService,
@@ -22,7 +23,23 @@ export class AnnonceComponent implements OnInit, OnDestroy {
     this.subscription = this.annonceService.getAnnonces()
     .subscribe
     (data => 
-      (this.annonces = data));
+      (this.annonces = data,
+        this.pictures = this.getFirstPicture(this.annonces),
+        console.log(this.pictures)
+        
+        ));
+  }
+
+  getFirstPicture(data) {
+    let array = []
+    for (let i = 0; i < data.length; i++){
+      if(data[i].pictures != null && data[i].pictures.length > 0){
+        array.push(data[i].pictures[0])
+      } else {
+        array.push("https://via.placeholder.com/100")
+      }
+    }
+      return array;
   }
 
   ngOnDestroy(){

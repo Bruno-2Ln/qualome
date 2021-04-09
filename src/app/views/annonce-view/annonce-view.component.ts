@@ -13,6 +13,7 @@ export class AnnonceViewComponent implements OnInit {
 
   annonces: Array<Annonce>;
   annonce: any;
+  pictures: Array<any>;
 
   id: Number;
   subscription: Subscription;
@@ -28,7 +29,8 @@ export class AnnonceViewComponent implements OnInit {
     (data => (
               this.annonces = data,
               this.id = +this.route.snapshot.params['id'],
-              this.annonce = this.getAnnonce(this.annonces, this.id)
+              this.annonce = this.getAnnonce(this.annonces, this.id),
+              this.pictures = this.annonce.pictures
               )
             )
           }

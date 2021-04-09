@@ -1,12 +1,12 @@
 
-<div class="test" *ngFor="let annonce of annonces">
+<div class="test" *ngFor="let annonce of annonces, let index = index">
 <div class="card col-md-10 p-4 mx-auto annonce-container d-flex">
     <div class="row g-0">
-        <div class="col-md-1 pl-0">
+        <div class="col-md-1 pl-0 d-flex align-items-center">
         <input type="checkbox" class="form-control checkbox">
         </div>
-        <div class="col-md-4 div-img">
-            <img src="https://via.placeholder.com/100" class="card-img-top img-fluid mh-100 h-75" alt="">
+        <div class="col-md-4 div-img d-flex">
+            <img [src]="pictures[index]" class=" img-fluid my-auto" alt="">
             <!--<img *ngIf="index == 0" class="card-img-top img-fluid mh-100" [src]="photo" alt="Card image cap">
             <img class="img-responsive" src="" alt="..."> -->
         </div>

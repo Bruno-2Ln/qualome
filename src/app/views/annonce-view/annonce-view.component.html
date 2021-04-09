@@ -5,14 +5,20 @@
     <div *ngIf="annonce" class="container-annonce">
         <div class="card m-auto bordure" style="width: 45rem;">
 
-            <div *ngIf="annonce.pictures.length === 1">
-                <div *ngFor="let pic of annonce.pictures; let first = first" class="img-fluid">
+            <div *ngIf="pictures === null">
+               
+                    <img src="https://via.placeholder.com/300" alt="photo du bien en vente" class="w-100"/>
+      
+            </div>
+
+            <div *ngIf="pictures != null && pictures.length === 1">
+                <div *ngFor="let pic of pictures; let first = first" class="img-fluid">
                     <img [src]="photo" alt="photo du bien en vente" class="w-100"/>
                 </div>
             </div>
 
-            <ngb-carousel class="mb-3" *ngIf="annonce.pictures.length > 1">
-                <ng-template ngbSlide *ngFor="let pic of annonce.pictures; let first = first; let i = index">
+            <ngb-carousel class="mb-3" *ngIf="pictures != null && pictures.length > 1">
+                <ng-template ngbSlide *ngFor="let pic of pictures; let first = first; let i = index">
                     <div class="picsum-img-wrapper">
                         <img class="d-block img m-auto" [src]="annonce.pictures[i]" alt="Photo du bien">
                     </div>
