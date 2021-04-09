@@ -1,4 +1,15 @@
 #search-container{
     height: 8rem;
     background-color: #010540;
+    label {
+        color: #fff;
+    }
+}
+
+.container-inputs {
+    width: 60%;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: auto;
 }

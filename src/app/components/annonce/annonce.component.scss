@@ -3,6 +3,10 @@
     height: 16rem;
     border: none!important;
     background-color: transparent;
+    color: #010540;
+        a{
+            color: #010540;
+        }
 }
 
 .test{
@@ -38,4 +42,32 @@ h6{
 
 input{
     font-size: 10px;
+    height: 40px;
 }
+
+input[type="checkbox"] { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+} 
+
+input[type=checkbox] {
+    -border-radius: 4px;
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    box-shadow: -1px 0px 12px 0px rgba(196,196,196,1);
+}
+
+input[type="checkbox"]:checked {
+    background: white;
+    padding:5px;
+    background: url(../../../assets/images/cross.svg);
+}
+
+.eye{
+    color: #FC5D41;
+    width: 100px;
+}
+
+

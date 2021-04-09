@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    max-height: 448.92px;
+}
+
+#test{
+    background: #f8f8f8 url("../../../assets/images/map.svg") 0% 0% no-repeat padding-box;
+}
+
+.container-annonce{
+    margin-top: 70px;
+    .bordure {
+        border: 0px;
+    }
+}
+
+.pin{
+    width: 13.66px;
+    height: 15.83px;
+    margin-right: 4.69px;
+}
+
+.infos{
+    width: 120px;
+}

@@ -1,4 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'neuzeit_grotesk';
+    src: url('~src/assets/fonts/neuzeitgro-bla-webfont.woff2') format('woff2'),
+    url('~src/assets/fonts/neuzeitgro-bla-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'neuzeit_grotesk';
+    src: url('~src/assets/fonts/neuzeitgro-bol-webfont.woff2') format('woff2'),
+    url('~src/assets/fonts/neuzeitgro-bol-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'neuzeit_grotesk';
+    src: url('~src/assets/fonts/neuzeitgro-reg-webfont.woff2') format('woff2'),
+    url('~src/assets/fonts/neuzeitgro-reg-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'neuzeit_grotesk';
+    src: url('~src/assets/fonts/neuzeitgro-lig-webfont.woff2') format('woff2'),
+    url('~src/assets/fonts/neuzeitgro-lig-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'neuzeits-bookbook';
+    src: url('~src/assets/fonts/neuzeitsbook-webfont.woff2') format('woff2'),
+    url('~src/assets/fonts/neuzeitsbook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Annonce } from 'src/app/interfaces/annonce';
-import { AnnonceService } from 'src/app/services/annonce.service';
 
 @Component({
   selector: 'app-annonces-view',
@@ -11,7 +10,8 @@ export class AnnoncesViewComponent implements OnInit {
 
   annonces: Array<Annonce>;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

@@ -1,7 +1,7 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Annonce } from '../interfaces/annonce';
 
 
@@ -13,16 +13,16 @@ export class AnnonceService {
 
   url: string = "https://bitbucket.org/!api/2.0/snippets/happy-monkey/4XK6Ga/05bd2fd06fb6a6b5c823eb67d5dc6175b9560421/files/listing"
   
-
   constructor(
     private http: HttpClient,
   ) {}
 
-  
-
   getAnnonces(): Observable<Annonce[]> {
     return this.http.get<Annonce[]>(this.url)
   }
+
+
+
 
 
 }

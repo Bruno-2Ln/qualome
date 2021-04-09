@@ -2,6 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Annonce } from 'src/app/interfaces/annonce';
 import { AnnonceService } from 'src/app/services/annonce.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-annonce',
@@ -12,17 +13,16 @@ export class AnnonceComponent implements OnInit, OnDestroy {
 
   annonces: Array<Annonce>;
   subscription: Subscription;
+
   constructor(
-    private annonceService: AnnonceService
+    private annonceService: AnnonceService,
   ) { }
 
   ngOnInit(): void {
     this.subscription = this.annonceService.getAnnonces()
     .subscribe
     (data => 
-      (this.annonces = data,
-        console.log(this.annonces)
-        ));
+      (this.annonces = data));
   }
 
   ngOnDestroy(){

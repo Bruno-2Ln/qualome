@@ -1,0 +1,46 @@
+<div id="test">
+
+    <app-menu2></app-menu2>
+
+    <div *ngIf="annonce" class="container-annonce">
+        <div class="card m-auto bordure" style="width: 45rem;">
+
+            <div *ngIf="annonce.pictures.length === 1">
+                <div *ngFor="let pic of annonce.pictures; let first = first" class="img-fluid">
+                    <img [src]="photo" alt="photo du bien en vente" class="w-100"/>
+                </div>
+            </div>
+
+            <ngb-carousel class="mb-3" *ngIf="annonce.pictures.length > 1">
+                <ng-template ngbSlide *ngFor="let pic of annonce.pictures; let first = first; let i = index">
+                    <div class="picsum-img-wrapper">
+                        <img class="d-block img m-auto" [src]="annonce.pictures[i]" alt="Photo du bien">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+
+            <div class="card-body px-0">
+
+                <div class="card-text d-flex ">
+                    <p class="d-flex flex-grow-1">
+                    <img class="pin" src="../../../assets/images/pin.svg" alt="icone marqueur de ville">
+                    {{annonce.address_full}}
+                    </p>
+                    <p class="font-weight-bold">
+                        {{annonce.price}} €
+                    </p>
+                </div>
+            
+                <h6 class="card-title w-50">{{annonce.title}}</h6>
+                <div class="d-flex justify-content-between infos m-3">
+                    <small class="small text-center">{{annonce.area_full}} m²</small>
+                    <small *ngIf="annonce.rooms && annonce.rooms > 1" class="card-text small text-center">{{annonce.rooms}} pièces</small>
+                    <small *ngIf="annonce.rooms  == 1" class="card-text small text-center">{{annonce.rooms}} pièce</small>
+                </div>
+                <p class="card-text">{{annonce.content}}</p>
+                <input type="text" class="form-control w-50" placeholder="Ajouter un commentaire">
+            </div>
+        </div>
+    </div>
+
+</div>

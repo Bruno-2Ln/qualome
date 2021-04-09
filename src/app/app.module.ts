@@ -14,6 +14,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AuthViewComponent } from './views/auth-view/auth-view.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AnnonceViewComponent } from './views/annonce-view/annonce-view.component';
+import { Menu2Component } from './components/menu2/menu2.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     MenuComponent,
     AuthViewComponent,
-    LogoComponent
+    LogoComponent,
+    AnnonceViewComponent,
+    Menu2Component,
   ],
   imports: [
     BrowserModule,

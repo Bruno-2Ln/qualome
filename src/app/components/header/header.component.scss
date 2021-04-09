@@ -1,18 +1,17 @@
 #header-container {
+    font-family: 'neuzeit_grotesk';
+    font-weight: 700;
     height: 510px;
+    color: #010540;
+    background: #f8f8f8 url("../../../assets/images/map.svg") 0% 0% no-repeat padding-box;
 }
 
-#accueil{
-
-    background: #f8f8f8 url("../../../assets/images/map.svg") 0% 0% no-repeat padding-box;
-
-        div{
-        width: 590px;
-        height: 82px;
-        font-size: 28px;
-        margin-top: 75px;
-        margin-bottom: 75px; 
-        }
+#accueil div{ 
+    width: 590px;
+    height: 82px;
+    font-size: 28px;
+    margin-top: 75px;
+    margin-bottom: 75px; 
 }
 
 .nbrAnnonces{

@@ -7,7 +7,7 @@ import { UserService } from 'src/app/services/user.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
 
@@ -18,7 +18,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private annonceService: AnnonceService,
-    private userService: UserService,
   ) { }
 
   ngOnInit(): void {
@@ -29,7 +28,7 @@ export class HeaderComponent implements OnInit {
         this.nbrAnnonces = this.annonces.length
         ));
         
-    this.name = this.userService.name;
+    this.name = "Alexandre Chastan"
   
   }
 

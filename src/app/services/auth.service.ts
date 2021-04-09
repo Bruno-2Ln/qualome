@@ -6,8 +6,8 @@ import { UserService } from './user.service';
 })
 export class AuthService {
 
-  isAuth: boolean = false;
-
+  isAuth: boolean;
+  name: string;
   constructor(
     private userService: UserService,
   ) { }
@@ -18,11 +18,15 @@ export class AuthService {
       setTimeout(() => {
 
         let user = this.userService.getUserByPseudo(username)
-
+        
         if (user) {
           if(user.password === password) {
             this.isAuth = true;
-            resolve(this.isAuth );
+            this.name = user.name
+            console.log(this.isAuth);
+            
+            resolve(this.isAuth);
+            resolve(this.name);
           }
           reject("Le mot de passe est erroné")
         }

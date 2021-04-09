@@ -1,0 +1,36 @@
+#menu {
+    background-color: #FC5D41;
+    height: 80px;
+
+        a, a:hover, a:visited, a:active {
+        color:#fff;
+        text-decoration:none;
+        }
+
+        ul{
+            list-style-type: none;
+        
+            .li-menu{
+                margin-top: 22px;
+                font-size: 21px;
+        
+                a{
+                    text-decoration: none;
+                }
+            }
+            .li-menu-filters{
+            margin-right: 60px;
+            }
+        }
+}
+
+.search {
+    width: 250px;
+    margin-top: 22px;
+    margin-left: 30px;
+}
+
+#accueil-link-div{
+    width: 660px;
+    margin-top: 28px;
+}

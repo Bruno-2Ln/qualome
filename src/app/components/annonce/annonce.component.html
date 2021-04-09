@@ -2,12 +2,15 @@
 <div class="test" *ngFor="let annonce of annonces">
 <div class="card col-md-10 p-4 mx-auto annonce-container d-flex">
     <div class="row g-0">
+        <div class="col-md-1 pl-0">
+        <input type="checkbox" class="form-control checkbox">
+        </div>
         <div class="col-md-4 div-img">
             <img src="https://via.placeholder.com/100" class="card-img-top img-fluid mh-100 h-75" alt="">
             <!--<img *ngIf="index == 0" class="card-img-top img-fluid mh-100" [src]="photo" alt="Card image cap">
             <img class="img-responsive" src="" alt="..."> -->
         </div>
-        <div class="col-md-8 d-flex">
+        <div class="col-md-7 d-flex">
             <div class="card-body col-md-8 pt-0">
                 <p class="card-text">
                     <img class="pin" src="../../../assets/images/pin.svg" alt="icone marqueur de ville">
@@ -31,7 +34,7 @@
                 <div class="h-100">
                     <h4 class="card-text text-right">{{annonce.price}} €</h4>
                     <p class="card-text text-right">16 €/m²</p>
-                    <p class="card-text text-right">coeur</p>
+                    <p class="card-text text-right"><a href="annonce/{{annonce.id}}"><i class="far fa-eye fa-lg eye"></i></a></p>
                     <p class="card-text text-right cross-annonce"><small><img class="cross" src="../../../assets/images/cross.svg" alt=""> Masquer cette annonce</small> </p>
                 </div>
             </div>
