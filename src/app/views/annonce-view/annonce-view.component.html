@@ -13,14 +13,14 @@
 
             <div *ngIf="pictures != null && pictures.length === 1">
                 <div *ngFor="let pic of pictures; let first = first" class="img-fluid">
-                    <img [src]="photo" alt="photo du bien en vente" class="w-100"/>
+                    <img [src]="photo" alt="photo du bien à vente" class="w-100"/>
                 </div>
             </div>
 
             <ngb-carousel class="mb-3" *ngIf="pictures != null && pictures.length > 1">
                 <ng-template ngbSlide *ngFor="let pic of pictures; let first = first; let i = index">
                     <div class="picsum-img-wrapper">
-                        <img class="d-block img m-auto" [src]="annonce.pictures[i]" alt="Photo du bien">
+                        <img class="d-block img m-auto" [src]="annonce.pictures[i]" alt="Photo du bien à vendre">
                     </div>
                 </ng-template>
             </ngb-carousel>
